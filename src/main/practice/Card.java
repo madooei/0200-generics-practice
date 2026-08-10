@@ -27,29 +27,20 @@ public class Card implements Comparable<Card> {
 
   @Override
   public boolean equals(Object o) {
-    if (this == o) {
-      return true;
-    }
-    if (o == null || getClass() != o.getClass()) {
-      return false;
-    }
-    Card other = (Card) o;
-    return rank == other.rank && suit == other.suit;
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   @Override
   public int hashCode() {
-    // Both fields decide equality, so both must feed the hash.
-    return Objects.hash(rank, suit);
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   @Override
   public int compareTo(Card other) {
-    if (this.rank != other.rank) {
-      return Integer.compare(this.rank, other.rank);
-    }
-    // Same rank: break the tie by suit so the order is total and matches equals.
-    return Character.compare(this.suit, other.suit);
+    // TODO: Implement me
+    throw new UnsupportedOperationException("TODO: Implement me");
   }
 
   @Override
