@@ -1,8 +1,7 @@
 # Generics — Practice: An Orderable Card and a Generic max
 
-Reference solutions for this chapter's two practice problems: give `Card`
-value equality and two orderings, then write a generic `max` over a
-`DynamicArray`.
+Two practice problems: give `Card` value equality and two orderings, then
+write a generic `max` over a `DynamicArray`.
 
 ## Prerequisites
 
