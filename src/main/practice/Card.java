@@ -4,9 +4,8 @@ import java.util.Objects;
 
 /**
  * A playing card: a rank (2–14, where 11–14 are J, Q, K, A) and a suit, one of
- * 'C', 'D', 'H', 'S'. Two cards are equal when both their rank and suit match,
- * and a card's natural order is by rank, then by suit — a total order that
- * stays consistent with equals.
+ * 'C', 'D', 'H', 'S'. Equality and natural order both key off rank and suit,
+ * kept consistent with each other.
  */
 public class Card implements Comparable<Card> {
   private int rank;

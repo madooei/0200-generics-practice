@@ -15,16 +15,18 @@ public final class MoreArrayUtils {
     // This class is a namespace, not a blueprint — don't instantiate it.
   }
 
-  // Returns the largest element by natural order. Mirrors indexOfMin, but keeps
-  // the element itself and flips the comparison from < to >.
-  public static <T extends Comparable<T>> T max(DynamicArray<T> a) {
+  // Assumes list is not null. Returns the largest element by natural order.
+  // Mirrors indexOfMin, but keeps the element itself and flips the comparison
+  // from < to >.
+  public static <T extends Comparable<T>> T max(DynamicArray<T> list) {
     // TODO: Implement me
     throw new UnsupportedOperationException("TODO: Implement me");
   }
 
-  // Returns the largest element by the given order. No Comparable bound is
-  // needed here — the ordering arrives in cmp, so T can be anything.
-  public static <T> T max(DynamicArray<T> a, Comparator<T> cmp) {
+  // Assumes list is not null. Returns the largest element by the given order.
+  // No Comparable bound is needed here — the ordering arrives in cmp, so T can
+  // be anything.
+  public static <T> T max(DynamicArray<T> list, Comparator<T> cmp) {
     // TODO: Implement me
     throw new UnsupportedOperationException("TODO: Implement me");
   }
