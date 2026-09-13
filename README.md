@@ -1,7 +1,6 @@
 # Generics — Practice: An Orderable Card and a Generic max
 
-Two practice problems: give `Card` value equality and two orderings, then
-write a generic `max` over a `DynamicArray`.
+Two practice problems: give `Card` value equality and two orderings, then write a generic `max` over a `DynamicArray`.
 
 ## Prerequisites
 
@@ -29,24 +28,14 @@ code/
 
 ## How to compile and run
 
-- `scripts/run.sh` — compiles all source into `out/` and runs the
-  `PracticeMain` demo.
+- `scripts/run.sh` — compiles all source into `out/` and runs the `PracticeMain` demo.
 
-There is no build tool and no test suite: testing is introduced later in the
-course. The script above is all you need.
+There is no build tool and no test suite: testing is introduced later in the course. The script above is all you need.
 
 ## What's here
 
-- `practice.Card` — a value type: value equality by rank and suit
-  (`equals`/`hashCode`) and a natural order by rank, then suit
-  (`Comparable<Card>`), kept consistent with each other.
-- `practice.SuitComparator` — an ordering of cards by suit, then rank, supplied
-  from outside `Card`.
-- `practice.MoreArrayUtils` — a generic `max` over a `DynamicArray`, in two
-  forms: by natural order (`<T extends Comparable<T>>`) and by a supplied
-  `Comparator<T>`.
-- `practice.PracticeMain` — a runnable demo showing the two orderings produce
-  different winners from the same hand.
-- `generics.DynamicArray<T>` — the chapter's growable generic array. Vendored
-  here unchanged so this problem's code has no dependency on the chapter's own
-  code and compiles and runs on its own.
+- `practice.Card` — a value type: value equality by rank and suit (`equals`/`hashCode`) and a natural order by rank, then suit (`Comparable<Card>`), kept consistent with each other.
+- `practice.SuitComparator` — an ordering of cards by suit, then rank, supplied from outside `Card`.
+- `practice.MoreArrayUtils` — a generic `max` over a `DynamicArray`, in two forms: by natural order (`<T extends Comparable<T>>`) and by a supplied `Comparator<T>`.
+- `practice.PracticeMain` — a runnable demo showing the two orderings produce different winners from the same hand.
+- `generics.DynamicArray<T>` — the chapter's growable generic array. Vendored here unchanged so this problem's code has no dependency on the chapter's own code and compiles and runs on its own.
