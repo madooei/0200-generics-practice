@@ -34,7 +34,7 @@ code/
 
 There is no build tool and no test suite: testing is introduced later in the course. The script above is all you need.
 
-## What's here
+## Contents
 
 - `practice.Card` — a value type: value equality by rank and suit (`equals`/`hashCode`) and a natural order by rank, then suit (`Comparable<Card>`), kept consistent with each other.
 - `practice.SuitComparator` — an ordering of cards by suit, then rank, supplied from outside `Card`.
